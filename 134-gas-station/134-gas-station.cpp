@@ -2,11 +2,6 @@ class Solution {
 public:
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
          int n=gas.size();
-        int sum1 = 0;
-        accumulate(gas.begin(),gas.end(),sum1);
-        int sum2=0;
-        accumulate(cost.begin(),cost.end(),sum2);
-        if(sum1<sum2)return -1;
         int maxin=0;
         int curr=0;
 	int consume = 0;
