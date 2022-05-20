@@ -1,7 +1,6 @@
 class Solution {
 public:
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
-        //int n=gas.size();
         int mxind=0;
         int curr=0;
 	    int consume = 0;
