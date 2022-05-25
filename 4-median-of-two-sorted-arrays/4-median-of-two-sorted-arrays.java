@@ -11,10 +11,9 @@ class Solution {
         Arrays.sort(merged); 
         if(siz%2 == 0)
         {
-            int x = (siz)/2;
-            int x1= x-1;
-            double z =Double.valueOf(merged[x1]);
-            double d =Double.valueOf(merged[x]);
+        
+            double z =Double.valueOf(merged[(siz)/2]);
+            double d =Double.valueOf(merged[(siz/2)-1]);
             median = (d+z)/2;
         }
         else 
