@@ -15,7 +15,7 @@ class Solution {
             int x1= x-1;
             double z =Double.valueOf(merged[x1]);
             double d =Double.valueOf(merged[x]);
-            median =Double.valueOf((d+z)/2);
+            median = (d+z)/2;
         }
         else 
         {
