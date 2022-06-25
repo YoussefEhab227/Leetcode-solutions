@@ -16,16 +16,16 @@ public:
             f.push_back(nums[0]);
             f.push_back(nums[0]);
             tS.push_back(f);  
-            f.clear();
+           // f.clear();
             return tS;
         }
         
         int i;
-        for( i=0;i<nums.size()&&nums[i]<=0;i++)
+        for( i=0;i<n&&nums[i]<=0;i++)
         {
-            if(i+1==nums.size()){break;}
+            if(i+1==n) break;
             start=i+1;
-            end=nums.size()-1;
+            end=n-1;
             target=-nums[i];
             while(start!=end)
             {
