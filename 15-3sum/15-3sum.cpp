@@ -54,7 +54,7 @@ public:
                 i++;
             }
         }
-        tS.erase(unique(tS.begin(), tS.end()), tS.end());    
+       tS.erase(unique(tS.begin(), tS.end()), tS.end());    
         return tS;
     }
 };
