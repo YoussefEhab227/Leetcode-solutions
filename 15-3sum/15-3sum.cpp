@@ -49,7 +49,7 @@ public:
                 }
                 
             }
-            while(i<nums.size()&&nums[i+1]==nums[i])
+            while(i<n&&nums[i+1]==nums[i])
             {
                 i++;
             }
