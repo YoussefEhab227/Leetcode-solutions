@@ -7,7 +7,7 @@ public:
         });
         
         int index=0;
-        for(int i=0; i< intervals.size(); i++){
+        for(int i=1; i< intervals.size(); i++){
             if(intervals[index][1] >= intervals[i][0]){
                 intervals[index][1] =max(intervals[index][1],intervals[i][1]);
                 intervals[index][0]=min(intervals[index][0],intervals[i][0]);   
