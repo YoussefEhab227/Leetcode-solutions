@@ -4,9 +4,10 @@ public:
     
     int left_sum= 0, right_sum=0;
     
-    int total=accumulate(nums.begin(),nums.end(),0); 
-     
-    right_sum = total - nums[0];
+    for(int i = 0; i<nums.size(); i++)
+        right_sum+=nums[i];
+
+     right_sum -= nums[0];
     
     if(right_sum == 0) return 0;
         
