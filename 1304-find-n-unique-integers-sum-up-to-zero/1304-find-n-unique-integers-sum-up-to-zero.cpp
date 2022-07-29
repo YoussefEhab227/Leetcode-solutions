@@ -1,7 +1,6 @@
 class Solution {
 public:
     vector<int> sumZero(int n){
-        if(n<=1) return {0};
         int s=n/2;
         vector<int> ans;
         
