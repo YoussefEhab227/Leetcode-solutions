@@ -12,10 +12,12 @@ public:
         
         if (index == len) return 0;
         
+        //Getting the sign
         bool isNegative = false;
         if (s[index] == '-') isNegative =true;
         if (isNegative || s[index] == '+') ++index;
         
+        //Converting the numbers, Rounding the Max/MIN numbers
         const int maxLimit = INT_MAX/10;
         int result =0;
         while (index < len && isDigit(ch=s[index]))
@@ -26,6 +28,7 @@ public:
             result = (10*result) + digit;
             ++index;
         }
+        
         return isNegative? -result : result;
     }
     
