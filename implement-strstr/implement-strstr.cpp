@@ -1,17 +1,23 @@
 class Solution {
 public:
     int strStr(string haystack, string needle) {
-        int h = haystack.length(), n = needle.length() , i = 0;
-        
-        while (i< h)
+        int n = needle.length();
+        int h = haystack.length();
+        int nIndex = 0;
+        for (int i = 0; i< h;i++)
         {
-            
-            string s= haystack.substr(i, n);
-            
-            if (s == needle){
-                return i;
+            if (haystack[i] == needle[nIndex])
+            {
+                nIndex++;
             }
-            i++;
+            else{
+                 i=i-nIndex;
+                nIndex=0;
+            }
+            if (nIndex == n)
+            {
+                return i-n+1;
+            }
         }
         return -1;
     }
